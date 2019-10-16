@@ -1,1 +1,32 @@
-<p>movie-details works!</p>
+
+<h1>{{movie?.title}}</h1>
+
+image: {{movie?.image}}
+<br>
+year: {{movie?.year}}
+<br>
+rated: {{movie?.rated}}
+<br>
+released: {{movie?.released}}
+<br>
+runtime: {{movie?.runtime}}
+<br>
+genres: <span *ngFor="let genre of movie?.details.genres"> {{genre}}</span>
+<br>
+directors: <span *ngFor="let director of movie?.details.directors">{{director}}</span>
+<br>
+writers: <span *ngFor="let writer of movie?.details.writers">{{writer}}</span>
+<br>
+actors: <span *ngFor="let actor of movie?.details.actors">{{actor}}</span>
+<br>
+plot: {{movie?.details.plot}}
+<br>
+languages: <span *ngFor="let language of movie?.details.languages">{{language}}</span>
+<br>
+countries: <span *ngFor="let country of movie?.details.countries">{{country}}</span>
+<br>
+awards: <span *ngFor="let award of movie?.details.awards">{{award}}</span>
+<br>
+
+<i class="fas fa-star fa-2x favorite-btn" *ngIf="!starred" (click)="starMovie()"></i>
+<i class="far fa-star fa-2x favorite-btn" *ngIf="starred" (click)="unStarMovie()"> </i>

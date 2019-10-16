@@ -1,1 +1,12 @@
-<p>movie works!</p>
+<div style="border: solid 2px; margin-bottom: 40px">
+  <h1 style="cursor: pointer;" (click)="viewDetails(movie.id)">title: {{movie.title}}</h1>
+  <br/>
+  Image: {{movie.image}}
+  <br/>
+  Year: {{movie.year}}
+  <br/>
+
+  <button *ngIf="!starred" (click)="starMovie(movie.id)"> Star movie</button>
+  <button *ngIf="starred" (click)="unStarMovie(movie.id)"> Unstar movie</button>
+</div>
+

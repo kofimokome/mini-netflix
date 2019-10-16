@@ -1,17 +1,6 @@
-<p>home works!</p>
-<h1>Here are your movies</h1>
-&lt; &lt; Search bar will appear here Use a directive for the search bar&gt; &gt;
 
-<div *ngFor="let movie of movies">
-  Use Movie component here insted
-  <p>
-    <b>title: {{movie.title}}</b>
-    <br/>
-    Image: {{movie.image}}
-    <br/>
-    Year: {{movie.year}}
-    <br/>
-    Star-icon that is click-able
-  </p>
-</div>
+<h1>Here are your movies</h1>
+<input type="text" placeholder="enter search text" (change)="search($event)">
+
+<app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
 

@@ -7,13 +7,13 @@ export class Movie {
     rated: number,
     released: string,
     runtime: string,
-    genre: string[],
-    director: string[],
-    writer: string[],
+    genres: string[],
+    directors: string[],
+    writers: string[],
     actors: string[],
     plot: string,
-    language: string[],
-    country: string[],
+    languages: string[],
+    countries: string[],
     awards: string[]
   };
 }

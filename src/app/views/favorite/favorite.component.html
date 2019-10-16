@@ -1,1 +1,5 @@
-<p>favorite works!</p>
+
+<h1>Here are your starred movies</h1>
+
+<app-movie *ngFor="let movie of movies" [movie]="movie" (onStarred)="handleStarred($event)"></app-movie>
+

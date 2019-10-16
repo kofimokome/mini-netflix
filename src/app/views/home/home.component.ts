@@ -11,11 +11,15 @@ export class HomeComponent implements OnInit {
 
   private movies: Movie[];
 
-  constructor(movieService: MovieService) {
-    this.movies = movieService.getMovies();
+  constructor(private movieService: MovieService) {
   }
 
   ngOnInit() {
+    this.movies = this.movieService.getMovies();
   }
 
+  search(event: any) {
+    // hh
+    this.movies = this.movieService.searchMovies(event.target.value);
+  }
 }

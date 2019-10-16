@@ -8,6 +8,7 @@ import { HomeComponent } from './views/home/home.component';
 import { FavoriteComponent } from './views/favorite/favorite.component';
 import { MovieDetailsComponent } from './views/movie-details/movie-details.component';
 import { MovieComponent } from './views/movie/movie.component';
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -20,10 +21,11 @@ import { MovieComponent } from './views/movie/movie.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FontAwesomeModule
   ],
   providers: [MovieService],
-  bootstrap: [HomeComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule {
 }
