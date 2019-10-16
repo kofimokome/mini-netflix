@@ -2,7 +2,7 @@ const movies = [
     {
       id: 1,
       title: 'test',
-      image: 'test',
+      image: 'https://pbs.twimg.com/media/CzBx03jUQAAvQ5P.jpg',
       year: 8484,
       details: {
         rated: 88484,
@@ -20,8 +20,8 @@ const movies = [
     },
     {
       id: 2,
-      title: 'test 2',
-      image: 'test 2',
+      title: 'The 100',
+      image: 'https://pbs.twimg.com/media/CzBx03jUQAAvQ5P.jpg',
       year: 8484,
       details: {
         rated: 88484,
@@ -39,8 +39,8 @@ const movies = [
     },
     {
       id: 3,
-      title: 'test 3',
-      image: 'test 3',
+      title: 'Guardians of the galaxy',
+      image: 'https://pbs.twimg.com/media/CzBx03jUQAAvQ5P.jpg',
       year: 8484,
       details: {
         rated: 88484,
@@ -58,8 +58,8 @@ const movies = [
     },
     {
       id: 4,
-      title: 'test 4',
-      image: 'test 4',
+      title: 'Avengers Endgame',
+      image: 'https://pbs.twimg.com/media/CzBx03jUQAAvQ5P.jpg',
       year: 8484,
       details: {
         rated: 88484,

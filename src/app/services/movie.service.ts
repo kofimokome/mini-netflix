@@ -1,7 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Movie} from '../models/movie';
 import movies from '../mock/movies';
-import {isNull} from 'util';
 
 @Injectable({
   providedIn: 'root'
@@ -38,7 +37,7 @@ export class MovieService {
   }
 
   searchMovies(term: string) {
-    const pattern = new RegExp(term);
+    const pattern = new RegExp(term, 'ig');
     return this.movies.filter(movie => pattern.test(movie.title));
   }
 
