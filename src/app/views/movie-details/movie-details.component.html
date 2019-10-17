@@ -5,11 +5,11 @@ image: {{movie?.image}}
 <br>
 year: {{movie?.year}}
 <br>
-rated: {{movie?.rated}}
+rated: {{movie?.details.rated}}
 <br>
-released: {{movie?.released}}
+released: {{movie?.details.released}}
 <br>
-runtime: {{movie?.runtime}}
+runtime: {{movie?.details.runtime}}
 <br>
 genres: <span *ngFor="let genre of movie?.details.genres"> {{genre}}</span>
 <br>
@@ -28,5 +28,5 @@ countries: <span *ngFor="let country of movie?.details.countries">{{country}}</s
 awards: <span *ngFor="let award of movie?.details.awards">{{award}}</span>
 <br>
 
-<i class="fas fa-star fa-2x favorite-btn" *ngIf="!starred" (click)="starMovie()"></i>
-<i class="far fa-star fa-2x favorite-btn" *ngIf="starred" (click)="unStarMovie()"> </i>
+<i class="far fa-star fa-2x favorite-btn" *ngIf="!starred" (click)="starMovie()"></i>
+<i class="fas fa-star fa-2x favorite-btn" *ngIf="starred" (click)="unStarMovie()"> </i>

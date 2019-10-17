@@ -9,6 +9,7 @@ import {FavoriteComponent} from './views/favorite/favorite.component';
 import {MovieDetailsComponent} from './views/movie-details/movie-details.component';
 import {MovieComponent} from './views/movie/movie.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    FormsModule
   ],
   providers: [MovieService],
   bootstrap: [AppComponent]

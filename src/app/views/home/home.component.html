@@ -1,6 +1,15 @@
-
-<h1>Here are your movies</h1>
-<input type="text" placeholder="enter search text" (change)="search($event)">
-
-<app-movie *ngFor="let movie of movies" [movie]="movie"></app-movie>
+<div class="container-fluid">
+  <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+    <div class="col-3">
+      <input type="text" placeholder="enter search text" class="form-control" [(ngModel)]="searchTerm" (keyup.enter)="search()">
+    </div>
+    <div class="col-1">
+      <button class="btn btn-primary" (click)="search()"><i class="fa fa-search"></i></button>
+    </div>
+  </div>
+  <hr/>
+  <div class="row">
+    <app-movie *ngFor="let movie of movies" [movie]="movie" class="col-3" style="margin-bottom: 40px;"></app-movie>
+  </div>
+</div>
 

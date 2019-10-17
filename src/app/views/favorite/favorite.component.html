@@ -1,5 +1,13 @@
-
-<h1>Here are your starred movies</h1>
-
-<app-movie *ngFor="let movie of movies" [movie]="movie" (onStarred)="handleStarred($event)"></app-movie>
+<div class="container-fluid">
+  <div class="row" style="margin-bottom: 20px; margin-top: 20px;">
+    <div class="col-12">
+      <h3>Here are your starred movies</h3>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <app-movie *ngFor="let movie of movies" [movie]="movie" (onStarred)="handleStarred($event)" class="col-3"
+               style="margin-bottom: 40px;"></app-movie>
+  </div>
+</div>
 

@@ -1,12 +1,15 @@
-<div style="border: solid 2px; margin-bottom: 40px">
-  <h1 style="cursor: pointer;" (click)="viewDetails(movie.id)">title: {{movie.title}}</h1>
-  <br/>
-  <img src="{{movie.image}}" alt="" height="300px">
-  <br/>
-  Year: {{movie.year}}
-  <br/>
-
-  <button *ngIf="!starred" (click)="starMovie(movie.id)"> Star movie</button>
-  <button *ngIf="starred" (click)="unStarMovie(movie.id)"> Unstar movie</button>
+<div class="card">
+  <img src="{{movie.image}}" class="card-img-top favorite-btn" alt="..." (click)="viewDetails(movie.id)">
+  <div class="card-body">
+    <h5 class="card-title"> {{movie.title}}</h5>
+  </div>
+  <div class="card-footer">
+    <div class="row">
+      <div class="mr-0">{{movie.year}}</div>
+      <div class="ml-auto">
+        <i *ngIf="!starred" (click)="starMovie(movie.id)" class="far fa-star fa-2x favorite-btn"> </i>
+        <i *ngIf="starred" (click)="unStarMovie(movie.id)" class="fa fa-star fa-2x favorite-btn"> </i>
+      </div>
+    </div>
+  </div>
 </div>
-

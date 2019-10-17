@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 import {Movie} from '../../models/movie';
 import {MovieService} from '../../services/movie.service';
 
@@ -10,6 +10,7 @@ import {MovieService} from '../../services/movie.service';
 export class HomeComponent implements OnInit {
 
   private movies: Movie[];
+  searchTerm: string;
 
   constructor(private movieService: MovieService) {
   }
@@ -18,8 +19,8 @@ export class HomeComponent implements OnInit {
     this.movies = this.movieService.getMovies();
   }
 
-  search(event: any) {
+  search() {
     // hh
-    this.movies = this.movieService.searchMovies(event.target.value);
+    this.movies = this.movieService.searchMovies(this.searchTerm);
   }
 }
