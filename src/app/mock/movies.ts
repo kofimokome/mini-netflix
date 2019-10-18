@@ -15,7 +15,7 @@ const movies = [
         plot: `In Gotham City, mentally-troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: "The Joker".`,
         languages: ['English'],
         countries: ['United States'],
-        awards: ['', '']
+        awards: []
       }
     },
     {
@@ -34,7 +34,7 @@ const movies = [
         plot: `Mary Elizabeth Winstead recalls her most intense scenes with Gemini Man co-star Will Smith, but can't quite bring back her Midwest accent from "Fargo."`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     },
     {
@@ -53,7 +53,7 @@ const movies = [
         plot: `Three teenagers must help a Yeti return to his family while avoiding a wealthy man and a zoologist who want it for their own needs.`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     },
     {
@@ -72,7 +72,7 @@ const movies = [
         plot: `The continuing story of the Crawley family, wealthy owners of a large estate in the English countryside in the early 20th century.`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     },
     {
@@ -91,7 +91,7 @@ const movies = [
         plot: `Inspired by the viral New York Magazine article, Hustlers follows a crew of savvy former strip club employees who band together to turn the tables on their Wall Street clients.`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     },
     {
@@ -110,7 +110,7 @@ const movies = [
         plot: `Legendary performer Judy Garland arrives in London in the winter of 1968 to perform a series of sold-out concerts.`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     },
     {
@@ -129,7 +129,7 @@ const movies = [
         plot: `Twenty-seven years after their first encounter with the terrifying Pennywise, the Losers Club have grown up and moved away, until a devastating phone call brings them back.`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     },
     {
@@ -148,7 +148,7 @@ const movies = [
         plot: `A comedy about what can happen when you love your phone more than anything else in your life.`,
         languages: ['English'],
         countries: ['USA'],
-        awards: ['fadf', 'fadsf']
+        awards: []
       }
     }
   ]

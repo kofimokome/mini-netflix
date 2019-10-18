@@ -1,32 +1,45 @@
+<div class="row">
+  <div class="col-4">
+    <h1>{{movie?.title}}</h1>
+  </div>
+</div>
+<div class="row">
+  <div class="col-3">
+    <img src="{{movie?.image}}" alt="" class="card-img">
+  </div>
+  <div class="col-9">
 
-<h1>{{movie?.title}}</h1>
+    <b>Year:</b> {{movie?.year}}
+    <br>
+    <b>Rated:</b> {{movie?.details.rated}}
+    <br>
+    <b>Released:</b> {{movie?.details.released}}
+    <br>
+    <b>Runtime:</b> {{movie?.details.runtime}}
+    <br>
+    <b>Genres:</b> <span *ngFor="let genre of movie?.details.genres"> {{genre}}, </span>
+    <br>
+    <b>Directors:</b> <span *ngFor="let director of movie?.details.directors">{{director}}, </span>
+    <br>
+    <b>Writers:</b> <span *ngFor="let writer of movie?.details.writers">{{writer}}, </span>
+    <br>
+    <b>Actors:</b> <span *ngFor="let actor of movie?.details.actors">{{actor}}, </span>
+    <br>
+    <b>Plot:</b> {{movie?.details.plot}}
+    <br>
+    <b>Languages:</b> <span *ngFor="let language of movie?.details.languages">{{language}}, </span>
+    <br>
+    <b>Countries:</b> <span *ngFor="let country of movie?.details.countries">{{country}}, </span>
+    <br>
+    <b>Awards:</b> <span *ngFor="let award of movie?.details.awards">{{award}}, </span>
+    <br>
+    <button class="btn-primary" (click)="starMovie()" *ngIf="!starred">
+      <i class="fa fa-plus favorite-btn"> </i> Add to favorites
+    </button>
+    <button class="btn-primary" (click)="unStarMovie()" *ngIf="starred">
+      <i class="fas fa-minus favorite-btn"> </i> Remove from favorites
+    </button>
 
-image: {{movie?.image}}
-<br>
-year: {{movie?.year}}
-<br>
-rated: {{movie?.details.rated}}
-<br>
-released: {{movie?.details.released}}
-<br>
-runtime: {{movie?.details.runtime}}
-<br>
-genres: <span *ngFor="let genre of movie?.details.genres"> {{genre}}</span>
-<br>
-directors: <span *ngFor="let director of movie?.details.directors">{{director}}</span>
-<br>
-writers: <span *ngFor="let writer of movie?.details.writers">{{writer}}</span>
-<br>
-actors: <span *ngFor="let actor of movie?.details.actors">{{actor}}</span>
-<br>
-plot: {{movie?.details.plot}}
-<br>
-languages: <span *ngFor="let language of movie?.details.languages">{{language}}</span>
-<br>
-countries: <span *ngFor="let country of movie?.details.countries">{{country}}</span>
-<br>
-awards: <span *ngFor="let award of movie?.details.awards">{{award}}</span>
-<br>
 
-<i class="far fa-star fa-2x favorite-btn" *ngIf="!starred" (click)="starMovie()"></i>
-<i class="fas fa-star fa-2x favorite-btn" *ngIf="starred" (click)="unStarMovie()"> </i>
+  </div>
+</div>
